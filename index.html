@@ -5,34 +5,81 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rubato</title>
-    <link rel="stylesheet" href="main.css">
-
+    <link rel="stylesheet" type="text/css" href="fullpage.css" />
+    <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-    <div class="main">
-        <img src="piano_bg.png" draggable="false"/>
-        <p class="tag-line">
-          <span>시각장애인의 여가 생활을 위한 </span>
-          <br/>
-          <span">피아노 학습 장갑.</span>
-        </p>
-        <p class="description">
-          <span>루바토는 점자 악보 없이 </span>
-          <br />
-          <span>음악을 배울 수 있게 하는 솔루션입니다.</span>
-          <br/><br/><br/><br/>
-        </p>
-        <div class="header">
-          <a class="logo" href="home">RUBATO</a>
-            <div class="header-right">
-                <a class="menu" href="#mission">미션</a>
-                <a class="menu" href="#prototype">프로토타입</a>
-                <a class="menu" href="#team">팀 소개</a>
+
+    <div class="header">
+        <a class="logo" href="#home" data-menuanchor="home">RUBATO</a>
+        <div class="header-right">
+            <a class="menu" href="#mission" data-menuanchor="mission">미션</a>
+            <a class="menu" href="#prototype" data-menuanchor="prototype">프로토타입</a>
+            <a class="menu" href="#team" data-menuanchor="team">팀 소개</a>
+        </div>
+    </div>
+
+    <div id="fullpage" class="main">
+        <div class="section">
+            
+            <!-- <img src="piano_bg.png" draggable="false"/> -->
+            <p class="tag-line">
+                <span>시각장애인의 여가 생활을 위한 </span>
+                <br/>
+                <span">피아노 학습 장갑.</span>
+            </p>
+            <p class="description">
+                <span>루바토는 점자 악보 없이 </span>
+                <br />
+                <span>음악을 배울 수 있게 하는 솔루션입니다.</span>
+              <br/><br/><br/><br/>
+            </p>
+        </div>
+        <div class="section">
+            <div class="mission">
+                <p class="mission" id="mission-1">루바토는 프로젝트 팀원들이 시각장애인 마라톤<br/> 러너들을 만나며 시작되었습니다.</p>
+                <p class="mission" id="mission-2">시각장애인의 여가 생활이 삶의 질에 큰<br/>영향을 미친다는 것을 알게 되었죠.</p>
+                <p class="mission" id="mission-3">그래서 점자 악보 없이도 피아노를 배울 수 있는<br/>장갑을 만들게 되었습니다.</p>
             </div>
         </div>
-      </div>
+        <div class="section">
+            <div class="prototype">
+                <div class="text">
+                    <p class="prototype" id="order1">루바토의 MIDI 시스템은 다음에 쳐야할 음을<br/>사용자에게 들려줍니다.</p>
+                    <p class="prototype" id="order2">만약 사용자의 손가락이 맞는 음 위에 있다면,</br>장갑에 부착된 진동 모터가 울리게 됩니다. </p>
+                    <p class="prototype" id="order3">이 모든 건 웹캠의 영상으로 파악하며, 음이<br/>알맞게 쳐지면 시스템은 다음 음으로 넘어갑니다. </p>
+                    <p class="prototype" id="order4">연습의 흐름은 환경설정 앱으로<br/>통제할 수 있습니다. </p>
+                </div>
+            </div>
+            <img id="gloves" src="pianogloves.png" alt="">
+        </div>
+        <div class="section">
+            <div class="row">
+                <img id="hosung" src="hosung.png" alt="">
+                <img id="juha" src="juha.png" alt="">
+                <img id="jin" src="jin.png" alt="">
+            </div>
 
-      
+            <p class="corny">
+                <span>
+
+                    저희는 용인외대부고 국제반에 소속된 세명의 고등학생입니다. <br/>
+    현재 개발 비용을 사비로 부담하고 있는데, 사이드 임팩트의 <br/>
+    지원금을 받으면 큰 도움이 될 것 같습니다. <br/>
+    루바토가 세상의 빛을 볼 수 있도록 도와주세요!
+                </span>
+            </p>
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="fullpage.js"></script>
+    <script type="text/javascript">
+        var fullPage = new fullpage('#fullpage', {
+    //options here
+    anchors:['home', 'mission', 'prototype', 'team'],
+    fitToSection: true,
+});
+    </script>
 </body>
 </html>
 

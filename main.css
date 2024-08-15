@@ -1,8 +1,8 @@
 body {
-    /* background-image: url(‘./piano_bg.png’); */
+    background-image: url(./piano_bg.png);
     background-color: white;
-    /* background-size:     cover;        */
-    background-size: contain;
+    background-size:     cover;       
+    /* background-size: contain; */
     background-repeat: no-repeat;
     margin: 0;
 }
@@ -14,27 +14,12 @@ p {
     user-select: none; /* Standard syntax */
 }
 
-img {
-    min-height: 100%;
-  min-width: 1024px;
-	
-  /* Set up proportionate scaling */
-  width: 100%;
-  height: auto;
-	
-  /* Set up positioning */
-  /* position: fixed; */
-  top: 0;
-  left: 0;
-  z-index: 0;
-  position: relative;
-  /* overflow: hidden; */
-}
 
 .header {
-    position: absolute;
+    position: fixed;
     top: 0;
-    overflow: hidden;
+    /* overflow: hidden; */
+    z-index: 10;
     width: 100%;
 }
 
@@ -85,10 +70,130 @@ p.description {
     color: white;
 }
 
-div.main {
-    /* background-image: url('./piano_bg.png'); */
+/* div.main {
+    background-image: url('./piano_bg.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     overflow: hidden;
     position: fixed;
+}  */
+
+
+.menu:active {
+    font-weight: bold;
+    color: black;
 }
+
+p {
+    color: white;
+}
+
+
+p.mission {
+    /* color: white; */
+    /* font-size: 72px; */
+    /* margin-top: 20px; */
+    /* position: absolute; */
+    /* z-index: 100; */
+}
+
+#mission-1 {
+    /* position: absolute;
+    top: 20%; */
+    left: 80px;
+    position: absolute;
+    top: 15%;
+    font-size: 72px;
+    color: white;
+}
+
+#mission-2 {
+    /* position: absolute;
+    top: 20%; */
+    text-align: right;
+    right: 80px;
+    position: absolute;
+    top: 40%;
+    font-size: 72px;
+    color: white;
+}
+
+#mission-3 {
+    /* position: absolute;
+    top: 20%; */
+    left: 80px;
+    position: absolute;
+    top: 65%;
+    font-size: 72px;
+    color: white;
+}
+
+div.mission {
+    width: 100%;
+}
+
+div.prototype {
+    left: 80px;
+    position: absolute;
+    top: 25%;
+    display: flex;
+}
+
+p.prototype {
+    font-size: 45px;
+    margin-top: 50px;
+}
+
+#gloves {
+    width: 550px;
+    height: 860px;
+    right: 80px;
+    top: 15%;
+    position: absolute;
+    /* display: flex; */
+    /* top: 20%; */
+}
+
+div.row {
+    align-items: center;
+}
+
+#hosung {
+    top: 20%;
+    left: 15%;
+    position: absolute;
+}
+
+#juha {
+    top: 20%;
+    left: 40%;
+    position: absolute;
+}
+
+#jin {
+    top: 20%;
+    left: 65%;
+    position: absolute;
+}
+
+p.corny {
+    padding-left: 0;
+    margin-top: 35%;
+    text-align: center;
+    color: white;
+    font-size: 45px;
+    
+}
+
+p.corny > span {
+    background: #1f1f1f;
+}
+
+/* #mission-3 {
+    text-align: left;
+    left: 80px;
+    position: absolute;
+    top: 70%;
+    font-size: 72px;
+    color: white;
+} */
